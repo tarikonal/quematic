@@ -32,6 +32,5 @@ Then open http://127.0.0.1:8765/
 
 - `index.html` — display layout + screensaver shell
 - `styles.css` — kiosk styling + screensaver layout
-- `app.js` — numpad/queue logic + idle screensaver
-- `turkish-flag-wave.gif` — looping waving Turkish flag for the screensaver
+- `app.js` — numpad/queue logic + idle screensaver + canvas flag wave
 - `turkish-flag.svg` — static flag reference asset
