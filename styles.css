@@ -110,7 +110,7 @@ body {
   }
 }
 
-/* —— Idle screensaver: waving Turkish flag —— */
+/* —— Idle screensaver: looping waving Turkish flag GIF —— */
 .screensaver {
   position: fixed;
   inset: 0;
@@ -129,7 +129,6 @@ body {
 
 .flag-stage {
   width: min(88vw, 1100px);
-  perspective: 1200px;
   filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.55));
 }
 
@@ -137,42 +136,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  transform-origin: left center;
-  animation: flag-wave 2.4s ease-in-out infinite;
-}
-
-@keyframes flag-wave {
-  0% {
-    transform: rotateY(-8deg) skewY(1.2deg) scaleX(1);
-  }
-  25% {
-    transform: rotateY(4deg) skewY(-1.6deg) scaleX(0.985);
-  }
-  50% {
-    transform: rotateY(10deg) skewY(1deg) scaleX(1.01);
-  }
-  75% {
-    transform: rotateY(-2deg) skewY(-1.2deg) scaleX(0.99);
-  }
-  100% {
-    transform: rotateY(-8deg) skewY(1.2deg) scaleX(1);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .flag-wave {
-    animation: flag-wave-soft 6s ease-in-out infinite;
-  }
-
-  @keyframes flag-wave-soft {
-    0%,
-    100% {
-      transform: rotateY(-2deg);
-    }
-    50% {
-      transform: rotateY(2deg);
-    }
-  }
+  image-rendering: auto;
 }
 
 @media (max-aspect-ratio: 3/4) {
