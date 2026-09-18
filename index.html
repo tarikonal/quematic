@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>QueMatic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="display" id="display" aria-live="polite" aria-label="Hazır siparişler">
+    <div class="slot" data-slot="0" aria-hidden="true"><span class="num"></span></div>
+    <div class="slot" data-slot="1" aria-hidden="true"><span class="num"></span></div>
+    <div class="slot" data-slot="2" aria-hidden="true"><span class="num"></span></div>
+    <div class="slot" data-slot="3" aria-hidden="true"><span class="num"></span></div>
+  </main>
+  <div id="screensaver" class="screensaver" hidden aria-hidden="true">
+    <div class="flag-stage" aria-hidden="true">
+      <img class="flag-wave" src="turkish-flag.svg" alt="" width="1200" height="800" />
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

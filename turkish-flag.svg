@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Türk bayra1">
+  <defs>
+    <clipPath id="flag-clip">
+      <rect width="1200" height="800" rx="8" ry="8"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag-clip)">
+    <!-- Red field -->
+    <rect width="1200" height="800" fill="#E30A17"/>
+    <!-- Crescent (outer white circle minus inner red) -->
+    <circle cx="425" cy="400" r="200" fill="#FFFFFF"/>
+    <circle cx="475" cy="400" r="160" fill="#E30A17"/>
+    <!-- Five-pointed star -->
+    <polygon
+      fill="#FFFFFF"
+      transform="translate(580 400) rotate(-15) scale(1.15)"
+      points="0,-90 25.3,-31.1 90,-31.1 37.4,8.1 58.8,72.5 0,28.1 -58.8,72.5 -37.4,8.1 -90,-31.1 -25.3,-31.1"
+    />
+  </g>
+</svg>
